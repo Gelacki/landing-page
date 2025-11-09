@@ -13,8 +13,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
 }
 
 body {
@@ -22,8 +20,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-color: var(--cor0);
-  color: var(--cor2);
+  color: var(--color02);
 }
 
 header {
@@ -40,42 +37,30 @@ header {
   padding: 2rem 1rem;
 }
 
-.certificado01 {
+.certificados-flex {
+  display: flex; /* Alinha os itens filhos (imagens) em uma linha */
+}
+
+.certificado01,
+.certificado02,
+.certificado03,
+.certificado04,
+.certificado05 {
+  display: inline-flex;
+  margin: 10px 10px 10px 10px;
   width: 50%;
-  height: auto;
-  border: 3px solid var(--color03);
+  border: 5px solid var(--color03);
+  border-radius: 3px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  transition: transform 0.3s;
+  transition: transform 0.3s ease;
 }
 
-.certificado01:hover {
-  transform: scale(1.05);
-}
-
-.certificado02 {
-  width: 50%;
-  height: auto;
-  border: 3px solid var(--color03);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  transition: transform 0.3s;
-}
-
-.certificado02:hover {
-  transform: scale(1.05);
-}
-
-.certificado03 {
-  width: 50%;
-  height: auto;
-  border: 3px solid var(--color03);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  transition: transform 0.3s;
-}
-
-.certificado03:hover {
+.certificado01:hover,
+.certificado02:hover,
+.certificado03:hover,
+.certificado04:hover,
+.certificado05:hover {
   transform: scale(1.05);
 }
 
@@ -105,8 +90,8 @@ nav ul li a {
 }
 
 main {
-  padding: 1rem;
-  max-width: 900px;
+  display: block;
+  max-width: 700px;
   margin: auto;
 }
 
