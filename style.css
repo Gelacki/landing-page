@@ -40,6 +40,45 @@ header {
   padding: 2rem 1rem;
 }
 
+.certificado01 {
+  width: 50%;
+  height: auto;
+  border: 3px solid var(--color03);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.certificado01:hover {
+  transform: scale(1.05);
+}
+
+.certificado02 {
+  width: 50%;
+  height: auto;
+  border: 3px solid var(--color03);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.certificado02:hover {
+  transform: scale(1.05);
+}
+
+.certificado03 {
+  width: 50%;
+  height: auto;
+  border: 3px solid var(--color03);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.certificado03:hover {
+  transform: scale(1.05);
+}
+
 .profile-pic {
   width: 150px;
   height: 150px;
