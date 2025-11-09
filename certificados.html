@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Certificados - Seu Nome</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
     <header class="header-small">
@@ -23,48 +23,101 @@
         <h3 class="certificados-heading">Clique nas imagens para expandir</h3>
 
         <div id="certificados-flex" class="certificados-flex">
-          <img
-            src="img/certificados/certificado01.png"
-            alt="Certificado 01"
+          <a
+            href="img/certificados/certificado01.png"
+            target="_blank"
             class="certificado01"
-            onclick="abrirModal(this)"
-          />
-          <img
-            src="img/certificados/certificado02.png"
-            alt="Certificado 02"
+          >
+            <img src="img/certificados/certificado01.png" alt="certificado01" />
+          </a>
+
+          <a
+            href="img/certificados/certificado02.png"
+            target="_blank"
             class="certificado02"
-            onclick="abrirModal(this)"
-          />
-          <img
-            src="img/certificados/certificado03.png"
-            alt="Certificado 03"
+          >
+            <img src="img/certificados/certificado02.png" alt="certificado02" />
+          </a>
+
+          <a
+            href="img/certificados/certificado03.png"
+            target="_blank"
             class="certificado03"
-            onclick="abrirModal(this)"
-          />
-          <img
-            src="img/certificados/certificado04.png"
-            alt="Certificado 04"
+          >
+            <img src="img/certificados/certificado03.png" alt="certificado03" />
+          </a>
+
+          <a
+            href="img/certificados/certificado04.png"
+            target="_blank"
             class="certificado04"
-            onclick="abrirModal(this)"
-          />
-          <img
-            src="img/certificados/certificado05.png"
-            alt="Certificado 05"
+          >
+            <img src="img/certificados/certificado04.png" alt="certificado04" />
+          </a>
+
+          <a
+            href="img/certificados/certificado05.png"
+            target="_blank"
             class="certificado05"
-            onclick="abrirModal(this)"
-          />
+          >
+            <img src="img/certificados/certificado05.png" alt="certificado05" />
+          </a>
         </div>
       </section>
     </main>
 
-    
-    <footer>
-      <ul>
-        <p>E-mail: gelacki.chowa@gmail.com</p>
-        <p>Cel/Whats: (42) 99 857 1023</p>
-        <p>© 2025 Aryell Chuertniek Gelacki</p>
-      </ul>
+    <footer id="contato">
+      <div class="footer-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <img src="img/icons/email.png" alt="Email" class="contact-icon" />
+            <p>
+              E-mail:
+              <a href="mailto:gelacki.chowa@gmail.com"
+                >gelacki.chowa@gmail.com</a
+              >
+            </p>
+          </div>
+          <div class="contact-item">
+            <img
+              src="img/icons/whatsapp.png"
+              alt="WhatsApp"
+              class="contact-icon"
+            />
+            <p>
+              WhatsApp:
+              <a href="https://wa.me/5542998571023" target="_blank"
+                >(42) 998571023</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="social-links">
+          <a
+            href="https://github.com/gelacki"
+            target="_blank"
+            class="social-link"
+          >
+            <img src="img/icons/github.png" alt="GitHub" class="social-icon" />
+            GitHub
+          </a>
+          <a
+            href="https://linkedin.com/in/gelacki"
+            target="_blank"
+            class="social-link"
+          >
+            <img
+              src="img/icons/linkedin.png"
+              alt="LinkedIn"
+              class="social-icon"
+            />
+            LinkedIn
+          </a>
+        </div>
+        <div class="copyright">
+          <p>© 2025 AGTech</p>
+        </div>
+      </div>
     </footer>
-      
-    </div>
+  </body>
 </html>
