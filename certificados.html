@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificados - Seu Nome</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header-small">
+      <div class="container">
+        <h1>🎓 Meus Certificados e Formação</h1>
+        <p>
+          Conhecimento adquirido e validado em diversas áreas do desenvolvimento
+          de sistemas.
+        </p>
+        <a href="index.html" class="cta-button">← Voltar ao Portfólio</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="certificados" class="certificados-section">
+        <h3 style="margin-bottom: 50px">Clique nas imagens para expandir</h3>
+
+        <div class="certificados-grid">
+          <div class="certificado-item">
+            <img
+              src="caminho/para/web_cert.jpg"
+              alt="Certificado de Desenvolvimento Web"
+              onclick="abrirModal('caminho/para/web_cert.jpg', 'Certificado: Desenvolvimento Web Completo - [Nome da Instituição]')"
+            />
+            <h4>Desenvolvimento Web</h4>
+            <p>Foco em Front-end (React) | 400 horas</p>
+          </div>
+
+          <div class="certificado-item">
+            <img
+              src="caminho/para/backend_cert.jpg"
+              alt="Certificado de Back-end com Python"
+              onclick="abrirModal('caminho/para/backend_cert.jpg', 'Certificado: Criação de APIs com Python e Django - [Nome da Instituição]')"
+            />
+            <h4>Back-end Python/Django</h4>
+            <p>Data de Conclusão: Jan/2024</p>
+          </div>
+
+          <div class="certificado-item">
+            <img
+              src="caminho/para/cloud_cert.jpg"
+              alt="Certificado de Computação em Nuvem"
+              onclick="abrirModal('caminho/para/cloud_cert.jpg', 'Certificado: Fundamentos de Cloud Computing (AWS/Azure) - [Nome da Instituição]')"
+            />
+            <h4>Cloud Computing</h4>
+            <p>Especialização em Serviços de Nuvem</p>
+          </div>
+
+          <div class="certificado-item">
+            <img
+              src="caminho/para/certificado4.jpg"
+              alt="Certificado Exemplo 4"
+              onclick="abrirModal('caminho/para/certificado4.jpg', 'Certificado: Banco de Dados e SQL Avançado - [Nome da Instituição]')"
+            />
+            <h4>SQL Avançado</h4>
+            <p>Dominando consultas complexas</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="certificado-modal" class="modal" onclick="fecharModal()">
+      <span class="close-button">&times;</span>
+      <img class="modal-content" id="modal-img" />
+      <div id="caption"></div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Seu Nome. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
