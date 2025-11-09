@@ -1,9 +1,20 @@
 @charset "UTF-8";
 
 :root {
-  --cor0: #ffffff;
-  --cor1: #008cba;
-  --cor2: #333f;
+  --color00: #03658c;
+  --color01: #025373;
+  --color02: #049dbf;
+  --color03: #0388a6;
+  --color04: #025e73;
+  --color05: #ffffff;
+  --color06: #f4f4f4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 body {
@@ -16,15 +27,27 @@ body {
 }
 
 header {
-  background-color: var(--cor1);
-  color: var(--cor0);
+  background-image: linear-gradient(
+    to right,
+    var(--color00),
+    var(--color01),
+    var(--color02),
+    var(--color03),
+    var(--color04)
+  );
+  color: var(--color06);
   text-align: center;
   padding: 2rem 1rem;
 }
 
 .profile-pic {
-  width: 120px;
-  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Imagem de perfil redonda */
+  object-fit: cover;
+  border: 5px solid var(--color03);
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
 
 nav ul {
@@ -38,7 +61,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: var(--cor0);
+  color: var(--color06);
   text-decoration: none;
 }
 
@@ -54,15 +77,21 @@ aside {
 }
 
 h2 {
-  background-image: linear-gradient(to right, var(--cor1), var(--cor0));
-  color: var(--cor0);
+  background-image: linear-gradient(
+    to right,
+    var(--color00),
+    var(--color02),
+    var(--color05)
+  );
+  color: var(--color06);
 }
 
 footer {
-  background-color: var(--cor2);
-  color: var(--cor0);
+  background-color: var(--color00);
+  color: var(--color06);
   text-align: center;
   padding: 1px;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 600px) {
